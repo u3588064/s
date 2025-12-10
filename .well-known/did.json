@@ -1,1 +1,32 @@
-{}
+{
+  "@context": [
+    "https://www.w3.org/ns/did/v1",
+    "https://w3id.org/security/suites/jws-2020/v1",
+    "https://w3id.org/security/suites/secp256k1-2019/v1"
+  ],
+  "id": "did:wba:u3588064.github.io:s",
+  "verificationMethod": [
+    {
+      "id": "did:wba:u3588064.github.io:s#key-1",
+      "type": "EcdsaSecp256k1VerificationKey2019",
+      "controller": "did:wba:u3588064.github.io:s",
+      "publicKeyJwk": {
+        "kty": "EC",
+        "crv": "secp256k1",
+        "x": "CY5DDvz6POczyMktKv8i1v1xj-lUDi3SpSs1WV1vugQ",
+        "y": "PE9h0payk6Zxi_cijg1vo0IQKYRdMftZvpmaXvAZlp0",
+        "kid": "jZjh-xSDOITZzHnIAakhdffnFFBaSc6QPdfFaVbri6g"
+      }
+    }
+  ],
+  "authentication": [
+    "did:wba:u3588064.github.io:s#key-1"
+  ],
+  "service": [
+    {
+      "id": "#anp-service",
+      "type": "AgentNetworkService", 
+      "serviceEndpoint": "https://ciwei.tech"
+    }
+  ]
+}
